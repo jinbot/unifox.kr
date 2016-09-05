@@ -1,0 +1,27 @@
+
+.bug{
+	
+	position:absolute;
+	width:5%;
+	height:11%;
+	
+}
+
+.mark1{
+	
+	background-color:orange; 
+	color:white;
+	height:50%;
+}
+
+.btn1{
+	
+	background-color:white;
+	color:black;
+}
+.panel.panel-warning {
+	
+	box-shadow: 10px 10px 0px #888888;
+	
+	
+}

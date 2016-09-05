@@ -1,0 +1,185 @@
+﻿<!doctype html>
+<html style="font-family: DungGeunMo">
+<head>
+  <title>Unifox</title>
+  <link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<link href="textillate-master/assets/animate.css" rel="stylesheet">
+	<script src="jquery/jquery.min.js"></script>
+	<script src="bootstrap/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
+	<script src="textillate-master/jquery.textillate.js"></script>
+	<script src="textillate-master/assets/jquery.fittext.js"></script>
+	<script src="textillate-master/assets/jquery.lettering.js"></script>
+	<script src="unifox.js"></script>
+	<style>
+	@font-face{
+
+		font-family:"DungGeunMo";
+		src:url("font/DungGeunMo.otf");
+
+}
+
+	</style>
+</head>
+
+<body style="background-color:black; color:white; font-family: DungGeunMo; background-image:url(img/black.png); font-size:20px;">
+	<div id="gallag" style="width:100%; height:;">
+    <input type="button" value="SKIP" style="opacity:0.5; color:gray; background-color:black;position:absolute; left:3%; top:94%; border:1px solid black;" onclick="newdiv()" id="skip">
+		<img src="img/bug.png" class="bug" style="top:50%; left:20%;" id="bug1">
+		<img src="img/bug.png" class="bug" style="top:50%; left:40%;" id="bug2">
+		<img src="img/bug.png" class="bug" style="top:50%; left:60%;" id="bug3">
+		<img src="img/bug.png" class="bug" style="top:50%; left:80%;" id="bug4">
+		<img src="img/bug2.png" class="bug" style="top:39%; left:10%;" id="bug5">
+		<img src="img/bug2.png" class="bug" style="top:39%; left:30%;" id="bug6">
+		<img src="img/bug2.png" class="bug" style="top:39%; left:50%;" id="bug7">
+		<img src="img/bug2.png" class="bug" style="top:39%; left:70%;" id="bug8">
+		<img src="img/bug2.png" class="bug" style="top:39%; left:90%;" id="bug9">
+		<img src="img/bug3.png" class="bug" style="top:28%; left:20%;" id="bug10">
+		<img src="img/bug3.png" class="bug" style="top:28%; left:40%;" id="bug11">
+		<img src="img/bug3.png" class="bug" style="top:28%; left:60%;" id="bug12">
+		<img src="img/bug3.png" class="bug" style="top:28%; left:80%;" id="bug13">
+		<img src="img/bug4.png" class="bug" style="top:17%; left:10%;" id="bug14">
+		<img src="img/bug4.png" class="bug" style="top:17%; left:30%;" id="bug15">
+		<img src="img/bug4.png" class="bug" style="top:17%; left:50%;" id="bug16">
+		<img src="img/bug4.png" class="bug" style="top:17%; left:70%;" id="bug17">
+		<img src="img/bug4.png" class="bug" style="top:17%; left:90%;" id="bug18">
+		<input type="button" value="자세히 보기!" onclick="newdiv();" class="btn1" style="position:absolute; bottom:7%; left:45%;" id="btn">
+		<img src="img/galallgplane.png" style="position:absolute; width:7%; height:12%; bottom:0%; left:47%;" id="plane">
+
+		<img src="img/error.png" style="position:absolute; width:100%;" id="error">
+		<img src="img/buguf.png" style="position:absolute; width:100%; top:0%; " id="buguf">
+		<img src="img/unifox_logo.svg" style="position:absolute; width:91%; top:0%; opacity:0; left:6%" id="realuf">
+		<div id="pung" style="position:absolute; border-radius:400; background-color:yellow; width:0.5%; height:3%; left:12.3%; bottom:3%;">
+
+		</div>
+	</div>
+	<div id="bigbox" class="container" style="width:100%; text-align:left; margin-top:5%;">
+
+		<h1 id="uf" data-in-effect="bounce">UNIFOX</h1>
+		<h3 id="uf2" data-in-effect="bounce">Whatever you want, Moreover we have.</h3>
+
+    <div class="panel panel-warning" style=" margin-top:5%; border-radius:0; border:0px;">
+       <div class="panel-heading" style="background-color:orange; color:white;">합격자 명단</div>
+        <div class="panel-body" style="color:black;"><span class="mark1">염석준</span> <span class="mark1">이대원</span> <span class="mark1">장준영</span> <span class="mark1">성은정</span> <span class="mark1">양현서</span> <span class="mark1">김수완</span> <span class="mark1">이유신</span> <span class="mark1">정규용</span> <span class="mark1">이현</span> <span class="mark1">서경민</span>
+           </div>
+         </div>
+		 <div class="panel panel-warning" style=" margin-top:5%; border-radius:0; border:0px;">
+			<div class="panel-heading" style="background-color:orange; color:white;">동아리 소개</div>
+			<div class="panel-body" style="color:black;">우리는 2008년, OS커널개발의 꿈을 안고 <span class="mark1">프로그래밍</span> <span class="mark1">동아리</span>로써의 첫 걸음을 내딛었습니다. 선린인터넷고등학교 <span class="mark1">정보통신과의</span> <span class="mark1">프로그래밍</span> <span class="mark1">동아리</span>인 우리는 <span class="mark1">프로그래밍</span>과 관련된 모든 분야에서 활동합니다. <span class="mark1">OS</span>를 비롯하여 <span class="mark1">IoT</span>, <span class="mark1">보안</span>, <span class="mark1">웹</span>, <span class="mark1">어플리케이션</span>, <span class="mark1">서버</span>, <span class="mark1">게임</span> 등 각자가 선택한 분야에서 개개인의 꿈과 역량을 마음껏 펼칠 수 있도록 돕습니다. 풍부한 경험을 쌓는 다양한 대회와 컨퍼런스 참여, 함께 토론하고 공유하는 스터디, 각자의 분야에서 깊은 탐구, 지식의 깊이를 더해주는 논문작성, etc. 우리는 <span class="mark1">꿈</span>과 <span class="mark1">미래</span>에 대한 확신으로 가득 찬 친구들이 모여 함께 만들어갑니다. 같은 분야의 깊은 지식을, 다른 분야의 넓은 경험을 공유하며 성장하는 '우리'는
+			<span class="mark1">Unifox</span>입니다.</div>
+    </div>
+		<div class="panel panel-warning" style=" margin-top:5%; border-radius:0; border:0px;">
+			<div class="panel-heading" style="background-color:orange; color:white;">동아리 실적
+				<p style="margin-bottom:0.1%;">
+					<input type="button" value="개발 분야" class="btn1" onclick="gaebal()">
+					<input type="button" value="보안 분야"  class="btn1" onclick="hack()">
+					<input type="button" value="네트워크/창업 분야"  class="btn1" onclick="network()">
+					<input type="button" value="교내 BIG3 대회"  class="btn1" onclick="big3()">
+					<input type="button" value="기타"  class="btn1" onclick="gita()">
+				</p>
+			</div>
+			<div class="panel-body" style="color:black;">
+				<div id="gae">
+					<li><span class="mark1">삼성 소프트웨어 멤버십</span> 1,2기 3명 배출
+					<li><span class="mark1">삼성 프로젝트 멘토링</span> 1기 수료
+					<li>SK Planet Smarteen App Challenge 2015 <span class="mark1">대상, 산업통산부장관상</span> (2015)
+					<li>정보올림피아드 지역예선 <span class="mark1">금상</span> (2014)
+					<li>환경정보 활용 에코톤 <span class="mark1">한국환경산업기술원장상</span> (2015)
+					<li>교내 프로그래밍 경진대회 <span class="mark1">은상2, 동상</span> (2015)
+					<li>교내 정보올림피아드 <span class="mark1">은상, 장려상</span> (2015)
+					<li>전국ICT창의성경시대회 프로그래밍 전문가 부문 <span class="mark1">동상</span>(2015)
+					<li>한국대학생ICT경진대회 C언어알고리즘 부문<span class="mark1">동상</span> (2014)
+					<li>Sw융합해커톤 본선 <span class="mark1">특별상</span> (2015)
+					<li>SK Planet Smarteen App Challenge 2014 장려상, 가작 (2014)
+					<li>전국ICT창의성경시대회 프로그래밍 전문가 부문 장려상 (2014)
+					<li>서울특별시 IT창의성대회 프로그래밍 전문가 부문 장려상 (2015)
+					<li>서울특별시 IT창의성대회 프로그래밍 전문가 부문 장려상 (2014)
+				</div>
+				<div id="hack">
+					<li>순천향대 정보보호 페스티벌 예선 <span class="mark1">1위</span>, 본선 <span class="mark1">하우리대표상</span>(2014)
+					<li>화이트햇 콘테스트 본선 <span class="mark1">2위</span>(2015)
+					<li>교내 모의해킹대회 <span class="mark1">2위 은상, 동상</span>(2015)
+					<li>정보보호 올림피아드 예선 <span class="mark1">2위</span>, 본선 <span class="mark1">동상</span> (2014)
+					<li>서울여대 정보보호영재교육원 1기 <span class="mark1">라온시큐어 대표상</span>(2014)
+					<li>순천향대 청소년 정보보호 페스티벌 본선 <span class="mark1">3위</span> (2015)
+					<li>교내정보보호올림피아드 <span class="mark1">동상, 장려상</span>(2015)
+					<li>inc0gnito CTF <span class="mark1">4위</span>(2015)
+					<li>순천향대 청소년 정보보호 페스티벌 예선 <span class="mark1">5위</span> (2015)
+					<li>SSU CTF 6위 (2014)
+					<li>JFF3 CTF 7위 (2015)
+					<li>코드게이트 주니어 본선 8위 (2015)
+					<li>코드게이트 주니어 예선 9위 (2015)
+					<li>정보보호올림피아드 예선 10위 (2015)
+					<li>화이트 햇 콘테스트 팀 예선 10위 (2014)
+					<li>홍익대학교 HUST 해킹페스티벌 11위 (2015)
+					<li>화이트햇 콘테스트 예선 11위 (2015)
+					<li>Defcon 예선 26위 (2015)
+				</div>
+				<div id="net">
+					<li>환경정보 활용 창업대회 <span class="mark1">환경부장관상</span> (2014)
+					<li>교내 취업진로 포트폴리오 경진대회 <span class="mark1">금상</span> (2015)
+					<li>앙트십 이베이 창업 워크숍CBT 심사 <span class="mark1">1위</span> (2014)
+					<li>교내 네트워크 구축대회 <span class="mark1">은상</span> (2015)
+					<li>교내 네트워크 구축대회 <span class="mark1">동상</span> (2014)
+				</div>
+				<div id="big">
+					<li>디지털 미디어 콘텐츠 경진대회 <span class="mark1">대상, 금상, 은상, 동상</span> <span style="color:#ff0000">(ALL KILL)</span> (2014)
+					<li>모바일 콘텐츠 경진대회 <span class="mark1">대상, 금상</span> (2014)
+					<li>교내 창의아이디어 경진대회<span class="mark1">1위 금상</span> (2014)
+					<li>디지털 미디어 콘텐츠 경진대회 <span class="mark1">은상, 동상</span> (2015)
+					<li>모바일 콘텐츠 경진대회<span class="mark1">은상, 동상</span> (2015)
+				</div>
+				<div id="gita">
+					<li>2014 선린인터넷고등학교 <span class="mark1">최우수</span> 동아리
+					<li>2015 선린인터넷고등학교 <span class="mark1">우수</span> 동아리
+					<li>정보통신과 유일 <span class="mark1">비즈쿨 창업</span> 동아리
+				</div>
+			</div>
+		</div>
+
+
+		<button type="button" class="btn1" data-toggle="collapse" data-target="#os">OS?</button>
+		<div id="os" class="collapse">
+			<blockquote>OS(Operating System)는 MS사의 'Windows', 'Linux'와 같은 컴퓨터의 운영체제를 지칭합니다. OS는 컴퓨터의 작동과 운영을 관리하는 기본 소프트웨어이며, 사용자와 컴퓨터를 잇는 연결통로이기도 합니다. Unifox는 'OS 커널 개발 동아리'라는 이름 아래 선린에 처음 발을 딛었으며, '프로그래밍 동아리'로 자리잡은 이후에도 OS를 지속적으로 연구해오고 있습니다.</blockquote>
+		</div>
+		<button type="button" class="btn1" data-toggle="collapse" data-target="#iot">IoT?</button>
+		<div id="iot" class="collapse">
+			 <blockquote>IoT 는 'Internet of Things'의 약자로 '사물인터넷'이라고도 불리며 단어 그래도 사물이 인터넷과 연결되는 환경을 뜻합니다. Unifox에서는 IT생태계를 이끌어 나아갈 인재를 양성하기 위해 IoT를 교육하고 있으며, Unifox의 모든 부원들은 IoT 실습에 필요한 모든 장비(RasberryPi, Arduino 등)을 지원받을 수 있습니다. </blockquote>
+		</div>
+		<button type="button" class="btn1" data-toggle="collapse" data-target="#security">Security?</button>
+		<div id="security" class="collapse">
+			<blockquote>'보안'은 '해킹'을 박기 위한 수단으로써, 모든 시스템에 빠져선 안되는 중요한 요소입니다. Unifox에서는 해킹을 전공하지 않더라도 모든 부원에게 보안의 중요성을 강조하고 있으며, 보안을 전공하는 부원들에 대한 전폭적인 지원을 아끼지 않고 있습니다.</blockquote>
+		</div>
+		<button type="button" class="btn1" data-toggle="collapse" data-target="#develop">Develop?</button>
+		<div id="develop" class="collapse">
+			<blockquote>게임, 웹, 앱, 서버, 영상처리, 3D, 인공지능, 머신러닝, 알고리즘, etc. 여러분들이 무엇을 상상하든, 무엇을 선택하든, 그 이상의 것을 경험할 수 있습니다. 바로 Unifox에서.</blockquote>
+		</div>
+		<div class="panel panel-warning" style=" margin-top:5%; border-radius:0; border:0px;">
+			<div class="panel-heading" style="background-color:orange; color:white;">QnA</div>
+			<div class="panel-body" style="color:black;">
+			<ol>
+				<li>시연회가 무엇인가요?
+					<h5>시연회는 새로운 동아리원을 맞이하기에 앞서 동아리 소개, 프로젝트 시연, 커리큘럼 소개 등 신입생 여러분들에게 동아리를 소개하는 자리입니다.</h5>
+				<li>시연회는 언제인가요?
+					<h5>Unifox 시연회는 3월 8일 화요일 방과후, 3호관 3층에 위치한 제 7컴퓨터실에서 진행합니다. 다양한 이벤트와 게임 대회를 통해 상품을 나눠드리며, 무한으로 제공되는 간식과 음료가 준비되어 있습니다. 부담없이 오셔서 즐기고 가시면 좋겠습니다.</h5>
+				<li>면접은 언제 보나요?
+					<h5>Unifox 면접은 3월 16~17일(수, 목) 방과후에 진행됩니다. 장소는 지원자들에 한해 추후 공지됩니다.</h5>
+				<li>Unifox에 지원하고 싶은데 어떻게 신청하나요?
+					<h5>unifox.kr 페이지 하단의 '지원 페이지' 버튼을 통해 지원할 수 있으며, 3월 16일 자정까지 지원 페이지의 질문에 성심성의껏 답변하여 제출하시면 됩니다. 단, 지원자가 폭주하거나 3월 15일 자정 이후에 지원서를 제출한 경우, 일부 지원자들의 면접은 목요일에 진행될 수 있습니다.</h5>
+				<li>면접에 무언가 준비해가고 싶은데 가능한가요?
+					<h5>물론입니다. 자신을 어필할 수 있는 모든 것(포트폴리오, ppt, 본인이 제작한 프로그램, 본인이 풀이한 문제, 장기자랑 등)은 언제든지 환영합니다. 수단과 방법에 대한 제한은 없으니 자유롭게 준비하여 주시기 바랍니다.</h5>
+				<li>더 자세한 문의사항은 아래의 연락처로 문의하시기 바랍니다.
+					<h4><span class="label label-warning">윤철민 010-9246-6462</span> &nbsp; &nbsp;
+					<span class="label label-warning">권욱제 010-3731-6491</span></h4>
+			</ol>
+			</div>
+		</div>
+
+		<div style="text-align:center; margin-bottom:1%;">
+			<a href="index.html"><input type="button" value="메인 페이지"  class="btn1" style=" border-radius:400;"></a>
+      <input type="button" onclick="alert('지원기간이 만료됬습니다.');"value="지원 페이지" class="btn1" style=" border-radius:400;" >
+    </div>
+	</div>
+</body>
